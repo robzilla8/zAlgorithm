@@ -52,5 +52,11 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 		}
 	}
 	
-}
+	public void printResults() {//prints out the Z-Value results from the string
+		for(int i=1;i<=zcounts.length;i++) {
+			System.out.println("The Z-value for index position"+i+"is "+zcounts[i]);
+		}
+		
+	}
+	
 }
