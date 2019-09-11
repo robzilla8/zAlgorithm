@@ -8,7 +8,7 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 	int rightValue;//the right value for a specific Z-box
 	int[] zcounts;//the total number of Z-counts for a Z-box
 	ZalgDriver driver = new ZalgDriver();
-	
+
 	public ZalgImp(String str) {//the constructor initializes all the values to zero, representing the beginning of any given string.
 		zcounts = new int[str.length()];
 		zcount=0;
@@ -22,8 +22,8 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 			counter++;
 		}
 	}
-	
-	public void Zalg(String patternString) {//the actual class which controls our Z-values. 
+
+	public void Zalg(String patternString) {//the actual class which controls our Z-values.
 		zcounts= new int[patternString.length()];
 		if(patternString.charAt(0)==patternString.charAt(1)) {//this if statement takes into account the Z2 value, as well as accounts for if the string has multiple values that are similar.
 			zcount+=1;
@@ -35,7 +35,7 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 		else {
 			zcounts[1]=0;
 		}
-		for(int i=2;i<patternString.length();i++) {//iterates through the string, simply moving the current position we are looking for. 
+		for(int i=2;i<patternString.length();i++) {//iterates through the string, simply moving the current position we are looking for.
 			if(i>rightValue) {//case one of the Z-algorithm, the current position is outside of the Z-box. We check from the beginning till we find a new string.
 				zcount=naiveSearch(patternString,1,i);
 				zcounts[i]=zcount;
@@ -45,7 +45,7 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 				}
 			}
 			else if(i<=rightValue) {//case two of the Z-algorithm, broken up based upon if a previous Z-value is greater than or equal to another value.
-				if(zcounts[i-leftValue]<(rightValue-i)) {//case 2.a of the Z-algorithm. If the new value is less than the length of the substring Beta. 
+				if(zcounts[i-leftValue]<(rightValue-i)) {//case 2.a of the Z-algorithm. If the new value is less than the length of the substring Beta.
 					zcounts[i]=zcounts[i-leftValue];
 				}
 				else if(zcounts[i-leftValue]>=(rightValue-i)) {
@@ -55,10 +55,10 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 					rightValue=(i+zcount+1);
 				}
 			}
-		
+
 		}
 	}
-	
+
 	private static int naiveSearch(String s, int indexToStartOn, int currentIndex) {
 		int count = 0;
 
@@ -74,4 +74,13 @@ public class ZalgImp {//a class which runs our implementation of the Z-algorithm
 		return count;
 	}
 	
+	public void printResults() {//prints out the Z-Value results from the string
+		for(int i=1;i<=zcounts.length;i++) {
+			System.out.println("The Z-value for index position"+i+"is "+zcounts[i]);
+		}
+
+	}
+
+}
+
 }
