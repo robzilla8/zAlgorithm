@@ -1,0 +1,146 @@
+x = 1
+y = -1
+z = -1
+Strings[0] = cgcgagcattt
+Strings[1] = gcctgggctaga
+
+  -   c   g   c   g   a   g   c   a   t   t   t 
+- 0   -1  -2  -3  -4  -5  -6  -7  -8  -9  -10 -11 
+g -1  -1  0   -1  -2  -3  -4  -5  -6  -7  -8  -9  
+c -2  0   -1  1   0   -1  -2  -3  -4  -5  -6  -7  
+c -3  -1  -1  0   0   -1  -2  -1  -2  -3  -4  -5  
+t -4  -2  -2  -1  -1  -1  -2  -2  -2  -1  -2  -3  
+g -5  -3  -1  -2  0   -1  0   -1  -2  -2  -2  -3  
+g -6  -4  -2  -2  -1  -1  0   -1  -2  -3  -3  -3  
+g -7  -5  -3  -3  -1  -2  0   -1  -2  -3  -4  -4  
+c -8  -6  -4  -2  -2  -2  -1  1   0   -1  -2  -3  
+t -9  -7  -5  -3  -3  -3  -2  0   0   1   0   -1  
+a -10 -8  -6  -4  -4  -2  -3  -1  1   0   0   -1  
+g -11 -9  -7  -5  -3  -3  -1  -2  0   0   -1  -1  
+a -12 -10 -8  -6  -4  -2  -2  -2  -1  -1  -1  -2  
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | 
+String S:  c g - c - g a g c a t - t t 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | 
+String S:  - c g c - g a g c a t - t t 
+String T:  g c - c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | 
+String S:  c g c - - g a g c a t - t t 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | Deletion | (Mis)match | (Mis)match | 
+String S:  c g - c - g a g c - a t t t 
+String T:  - g c c t g g g c t a - g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | Deletion | (Mis)match | (Mis)match | 
+String S:  - c g c - g a g c - a t t t 
+String T:  g c - c t g g g c t a - g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | Deletion | (Mis)match | (Mis)match | 
+String S:  c g c - - g a g c - a t t t 
+String T:  - g c c t g g g c t a - g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | Insertion | (Mis)match | 
+String S:  c g - c - g a g c a t t - t 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | Insertion | (Mis)match | 
+String S:  - c g c - g a g c a t t - t 
+String T:  g c - c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | Insertion | (Mis)match | 
+String S:  c g c - - g a g c a t t - t 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | Deletion | (Mis)match | 
+String S:  c g - c - g a g c - a t t t 
+String T:  - g c c t g g g c t a g - a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | Deletion | (Mis)match | 
+String S:  - c g c - g a g c - a t t t 
+String T:  g c - c t g g g c t a g - a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | Deletion | (Mis)match | 
+String S:  c g c - - g a g c - a t t t 
+String T:  - g c c t g g g c t a g - a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | (Mis)match | Insertion | 
+String S:  c g - c - g a g c a t t t - 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | (Mis)match | Insertion | 
+String S:  - c g c - g a g c a t t t - 
+String T:  g c - c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Deletion | (Mis)match | (Mis)match | (Mis)match | Insertion | 
+String S:  c g c - - g a g c a t t t - 
+String T:  - g c c t g g g c - t a g a 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | Insertion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | Deletion | 
+String S:  c g - c - g a g c - a t t t 
+String T:  - g c c t g g g c t a g a - 
+Score: -2
+
+
+-------Possible best alignment---------------
+Insertion | (Mis)match | Deletion | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | Deletion | 
+String S:  - c g c - g a g c - a t t t 
+String T:  g c - c t g g g c t a g a - 
+Score: -2
+
+
+-------Possible best alignment---------------
+Deletion | (Mis)match | (Mis)match | Insertion | Insertion | (Mis)match | (Mis)match | (Mis)match | (Mis)match | Insertion | (Mis)match | (Mis)match | (Mis)match | Deletion | 
+String S:  c g c - - g a g c - a t t t 
+String T:  - g c c t g g g c t a g a - 
+Score: -2

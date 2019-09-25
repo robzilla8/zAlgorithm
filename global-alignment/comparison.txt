@@ -1,0 +1,35 @@
+x = 1
+y = -1
+z = -1
+Strings[0] = GAC
+Strings[1] = GTC
+
+  -   G   A   C 
+- 0   -1  -2  -3  
+G -1  1   0   -1  
+T -2  0   0   -1  
+C -3  -1  -1  1   
+
+
+-------Possible best alignment---------------
+(Mis)match | (Mis)match | (Mis)match | 
+String S:  G A C 
+String T:  G T C 
+Score: 1
+x = 1
+y = -1
+z = -1
+Strings[0] = AC
+Strings[1] = GT
+
+  -   A   C 
+- 0   -1  -2  
+G -1  -1  -2  
+T -2  -2  -2  
+
+
+-------Possible best alignment---------------
+(Mis)match | (Mis)match | 
+String S:  A C 
+String T:  G T 
+Score: -2

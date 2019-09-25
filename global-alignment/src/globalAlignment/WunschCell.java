@@ -18,6 +18,8 @@ public class WunschCell {
 	// represents going left on the matrix
 	private boolean optimalDeletion = false;
 	
+	private String cellInfo;
+	
 	// Pointer to the wunsch cell representing an insertion in S that leads to an optimal score for this cell
 	private WunschCell insertionParent;
 	// Pointer to the wunsch cell representing a deltion in T that leads to an optimal score for this cell
@@ -62,7 +64,7 @@ public class WunschCell {
 		insertionParent = parent;
 	}
 	
-	public WunschCell getInsertionParent(WunschCell parent) {
+	public WunschCell getInsertionParent() {
 		return insertionParent;
 	}
 	
@@ -71,7 +73,7 @@ public class WunschCell {
 		deletionParent = parent;
 	}
 	
-	public WunschCell getDeletionParent(WunschCell parent) {
+	public WunschCell getDeletionParent() {
 		return deletionParent;
 	}
 	
@@ -80,7 +82,7 @@ public class WunschCell {
 		matchParent = parent;
 	}
 	
-	public WunschCell getMatchParent(WunschCell parent) {
+	public WunschCell getMatchParent() {
 		return matchParent;
 	}
 	
@@ -94,6 +96,14 @@ public class WunschCell {
 	
 	public boolean getMatch() {
 		return optimalMatch;
+	}
+	
+	public void setCellInfo(String info) {
+		cellInfo = info;
+	}
+	
+	public String getCellInfo() {
+		return cellInfo;
 	}
 
 }
